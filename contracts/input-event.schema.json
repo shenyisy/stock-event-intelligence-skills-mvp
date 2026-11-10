@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InputEvent",
+  "type": "object",
+  "required": [
+    "provider_event_id",
+    "title",
+    "event_type",
+    "domain",
+    "temporal_mode",
+    "event_time",
+    "published_at",
+    "fetched_at",
+    "available_at",
+    "source",
+    "verification_status"
+  ],
+  "properties": {
+    "provider_event_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "domain": {
+      "enum": [
+        "MACRO",
+        "STOCK",
+        "SECTOR",
+        "POLICY",
+        "POLITICAL",
+        "GEOPOLITICAL"
+      ]
+    },
+    "temporal_mode": {
+      "enum": [
+        "SCHEDULED",
+        "DECISION_DRIVEN",
+        "CONDITION_TRIGGERED",
+        "EMERGING"
+      ]
+    },
+    "event_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "published_at": {
+      "type": "string"
+    },
+    "fetched_at": {
+      "type": "string"
+    },
+    "available_at": {
+      "type": "string"
+    },
+    "verification_status": {
+      "enum": [
+        "PENDING",
+        "PARTIALLY_VERIFIED",
+        "CONFLICTED",
+        "VERIFIED"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "source_name",
+        "source_role",
+        "url"
+      ]
+    }
+  }
+}

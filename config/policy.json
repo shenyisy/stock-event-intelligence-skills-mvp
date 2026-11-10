@@ -1,0 +1,15 @@
+{
+  "version": "mvp-0.1",
+  "weights": {
+    "exposure": 30,
+    "materiality": 20,
+    "evidence": 20,
+    "timing": 15,
+    "change": 15
+  },
+  "thresholds": {
+    "watchlist_signal": 50,
+    "actionable_alert": 75
+  },
+  "verified_required_for_alert": true
+}

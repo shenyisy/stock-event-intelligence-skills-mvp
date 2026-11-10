@@ -1,0 +1,178 @@
+{
+  "run_id": "run_20261109T134612Z_a4ede69f47b9f11443d6",
+  "events": [
+    {
+      "provider_event_id": "fixture-cpi-2026-11",
+      "title": "US CPI release",
+      "event_type": "CPI_RELEASE",
+      "domain": "MACRO",
+      "temporal_mode": "SCHEDULED",
+      "event_time": "2026-11-12T08:30:00-05:00",
+      "published_at": "2026-10-30T09:00:00-04:00",
+      "fetched_at": "2026-11-09T08:00:00-05:00",
+      "available_at": "2026-11-09T08:00:00-05:00",
+      "source": {
+        "source_id": "demo-bureau",
+        "source_name": "Example official calendar",
+        "source_role": "OFFICIAL_PRIMARY",
+        "url": "https://example.invalid/cpi",
+        "evidence_note": "Synthetic fixture; not a real event source"
+      },
+      "verification_status": "PENDING",
+      "materiality": 5,
+      "change_score": 3,
+      "consensus_status": "UNAVAILABLE",
+      "candidate_tickers": [
+        "MSFT",
+        "NVDA",
+        "JPM"
+      ],
+      "event_id": "evt_1343aa01e04e859798ed",
+      "source_records": [
+        {
+          "source": {
+            "source_id": "demo-bureau",
+            "source_name": "Example official calendar",
+            "source_role": "OFFICIAL_PRIMARY",
+            "url": "https://example.invalid/cpi",
+            "evidence_note": "Synthetic fixture; not a real event source"
+          },
+          "published_at": "2026-10-30T09:00:00-04:00",
+          "fetched_at": "2026-11-09T08:00:00-05:00",
+          "available_at": "2026-11-09T08:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "provider_event_id": "fixture-nvda-earnings-2026",
+      "title": "NVDA earnings release",
+      "event_type": "EARNINGS",
+      "domain": "STOCK",
+      "temporal_mode": "SCHEDULED",
+      "event_time": "2026-11-18T16:00:00-05:00",
+      "published_at": "2026-11-05T10:00:00-05:00",
+      "fetched_at": "2026-11-09T08:05:00-05:00",
+      "available_at": "2026-11-09T08:05:00-05:00",
+      "source": {
+        "source_id": "demo-aggregator",
+        "source_name": "Example earnings calendar",
+        "source_role": "PROFESSIONAL_AGGREGATOR",
+        "url": "https://example.invalid/nvda",
+        "evidence_note": "Synthetic fixture; requires issuer IR confirmation"
+      },
+      "verification_status": "PENDING",
+      "materiality": 5,
+      "change_score": 2,
+      "consensus_status": "UNAVAILABLE",
+      "subject_ticker": "NVDA",
+      "candidate_tickers": [
+        "NVDA"
+      ],
+      "event_id": "evt_d23304971f837452aaec",
+      "source_records": [
+        {
+          "source": {
+            "source_id": "demo-aggregator",
+            "source_name": "Example earnings calendar",
+            "source_role": "PROFESSIONAL_AGGREGATOR",
+            "url": "https://example.invalid/nvda",
+            "evidence_note": "Synthetic fixture; requires issuer IR confirmation"
+          },
+          "published_at": "2026-11-05T10:00:00-05:00",
+          "fetched_at": "2026-11-09T08:05:00-05:00",
+          "available_at": "2026-11-09T08:05:00-05:00"
+        },
+        {
+          "source": {
+            "source_id": "demo-news",
+            "source_name": "Example news feed",
+            "source_role": "NEWS_DISCOVERY",
+            "url": "https://example.invalid/nvda-news",
+            "evidence_note": "Synthetic duplicate fixture"
+          },
+          "published_at": "2026-11-05T10:10:00-05:00",
+          "fetched_at": "2026-11-09T08:06:00-05:00",
+          "available_at": "2026-11-09T08:06:00-05:00"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal_id": "sig_d1f995a9d0e950dbc4a7",
+      "event_id": "evt_1343aa01e04e859798ed",
+      "ticker": "JPM",
+      "score": 54,
+      "signal_level": "CANDIDATE",
+      "blockers": [
+        "VERIFICATION_NOT_PASSED",
+        "CONSENSUS_UNAVAILABLE"
+      ],
+      "score_components": {
+        "exposure": 20,
+        "materiality": 100,
+        "evidence": 20,
+        "timing": 100,
+        "change": 60
+      },
+      "historical_impact_status": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "signal_id": "sig_975dd8a85bf004b42198",
+      "event_id": "evt_1343aa01e04e859798ed",
+      "ticker": "MSFT",
+      "score": 54,
+      "signal_level": "CANDIDATE",
+      "blockers": [
+        "VERIFICATION_NOT_PASSED",
+        "CONSENSUS_UNAVAILABLE"
+      ],
+      "score_components": {
+        "exposure": 20,
+        "materiality": 100,
+        "evidence": 20,
+        "timing": 100,
+        "change": 60
+      },
+      "historical_impact_status": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "signal_id": "sig_fdfb1406b32d9fb39a5f",
+      "event_id": "evt_1343aa01e04e859798ed",
+      "ticker": "NVDA",
+      "score": 54,
+      "signal_level": "CANDIDATE",
+      "blockers": [
+        "VERIFICATION_NOT_PASSED",
+        "CONSENSUS_UNAVAILABLE"
+      ],
+      "score_components": {
+        "exposure": 20,
+        "materiality": 100,
+        "evidence": 20,
+        "timing": 100,
+        "change": 60
+      },
+      "historical_impact_status": "INSUFFICIENT_EVIDENCE"
+    },
+    {
+      "signal_id": "sig_15f048036ecc6e72c088",
+      "event_id": "evt_d23304971f837452aaec",
+      "ticker": "NVDA",
+      "score": 54,
+      "signal_level": "CANDIDATE",
+      "blockers": [
+        "VERIFICATION_NOT_PASSED",
+        "CONSENSUS_UNAVAILABLE"
+      ],
+      "score_components": {
+        "exposure": 30,
+        "materiality": 100,
+        "evidence": 20,
+        "timing": 100,
+        "change": 40
+      },
+      "historical_impact_status": "INSUFFICIENT_EVIDENCE"
+    }
+  ]
+}

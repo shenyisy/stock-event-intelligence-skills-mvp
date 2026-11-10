@@ -1,0 +1,18 @@
+{
+  "OFFICIAL_PRIMARY": {
+    "trust_tier": 3,
+    "description": "Official issuer or government source"
+  },
+  "PROFESSIONAL_AGGREGATOR": {
+    "trust_tier": 2,
+    "description": "Commercial event data provider"
+  },
+  "NEWS_DISCOVERY": {
+    "trust_tier": 1,
+    "description": "News discovery source"
+  },
+  "COMMUNITY_SIGNAL": {
+    "trust_tier": 0,
+    "description": "Unverified discovery only"
+  }
+}

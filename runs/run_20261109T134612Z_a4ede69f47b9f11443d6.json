@@ -1,0 +1,13 @@
+{
+  "run_id": "run_20261109T134612Z_a4ede69f47b9f11443d6",
+  "started_at": "2026-11-09T13:46:12.120996+00:00",
+  "input_path": "fixtures/events.json",
+  "event_count": 2,
+  "signal_count": 4,
+  "status": "COMPLETED",
+  "artifacts": [
+    "data/raw/run_20261109T134612Z_a4ede69f47b9f11443d6.json",
+    "data/curated/run_20261109T134612Z_a4ede69f47b9f11443d6.json",
+    "reports/daily/run_20261109T134612Z_a4ede69f47b9f11443d6.md"
+  ]
+}

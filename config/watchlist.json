@@ -1,0 +1,8 @@
+{
+  "tickers": [
+    "MSFT",
+    "NVDA",
+    "JPM"
+  ],
+  "timezone": "America/New_York"
+}
